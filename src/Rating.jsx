@@ -25,14 +25,17 @@ export function Rating({ rating }) {
     case 2:
       styleObj.backgroundColor = "#CFCFCF";
       text = "Silver";
+      styleObj.color = "black";
       break;
     case 3:
       styleObj.backgroundColor = "gold";
       text = "Gold";
+      styleObj.color = "black";
       break;
     case 4:
       styleObj.backgroundColor = "#A4E2F9";
       text = "Diamond";
+      styleObj.color = "black";
       break;
 
     default:
