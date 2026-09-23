@@ -26,7 +26,7 @@ function createEmptyForm() {
     dxvk_ver: "1.8",
     Video: "Framebuffer",
     OC: false,
-    OC_params: ["STOCK", "0", "0"],
+    OC_params: ["STOCK", "STOCK", "STOCK"],
     build_ver: "1.0.0",
     desc: "",
   };
