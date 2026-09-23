@@ -251,7 +251,10 @@ export default function Form() {
                   className="home-btn"
                   onClick={() => {
                     const title = `[Request] ${form.name || "Untitled"}`;
-                    const body = "```json\n" + json + "\n```";
+                    const body =
+                      "# JSON\n```json\n" +
+                      json +
+                      "\n```\n# Carica/Link patchset .zip ";
                     const url =
                       `https://github.com/autorun-db/autorun-db.github.io/issues/new` +
                       `?title=${encodeURIComponent(title)}` +
