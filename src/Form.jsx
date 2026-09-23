@@ -254,7 +254,7 @@ export default function Form() {
                     const body =
                       "# JSON\n```json\n" +
                       json +
-                      "\n```\n# Carica/Link patchset .zip ";
+                      "\n```\n# Upload/Link patchset .zip ";
                     const url =
                       `https://github.com/autorun-db/autorun-db.github.io/issues/new` +
                       `?title=${encodeURIComponent(title)}` +

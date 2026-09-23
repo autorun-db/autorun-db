@@ -30,13 +30,17 @@ export function Game({ gioco }) {
         </div>
       </div>
       <textarea readOnly value={gioco.desc}></textarea>
-      <button
-        onClick={() => {
-          window.open(gioco.patch_link, "_blank");
-        }}
-      >
-        Download patchset
-      </button>
+      {gioco.patch_link ? (
+        <button
+          onClick={() => {
+            window.open(gioco.patch_link, "_blank");
+          }}
+        >
+          Download patchset
+        </button>
+      ) : (
+        <button disabled>No patches are required</button>
+      )}
     </div>
   );
 }
