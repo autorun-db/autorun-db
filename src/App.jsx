@@ -1,6 +1,6 @@
 import JSON from "./assets/games.json";
 import { Game } from "./Game";
-import "./App.css";
+import "./common.css";
 
 export default function App() {
   return (
