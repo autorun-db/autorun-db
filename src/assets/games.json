@@ -1,0 +1,14 @@
+[
+  {
+    "name": "Ultimate spider-man",
+    "imgSrc": "./img/ultimate-spider-man.jpg",
+    "rating": 0,
+    "D3D9": "dxvk",
+    "dxvk_ver": "1.8",
+    "Video": "Framebuffer",
+    "OC": true,
+    "OC_params": ["STOCK", "0", "0"],
+    "build_ver": "1.0.0",
+    "desc": "Palle in culo"
+  }
+]
