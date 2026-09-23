@@ -20,7 +20,6 @@ const OC_LABELS = ["CPU", "GPU", "RAM"];
 function createEmptyForm() {
   return {
     name: "",
-    imgSrc: "",
     rating: 0,
     D3D9: "dxvk",
     dxvk_ver: "1.8",
@@ -48,7 +47,6 @@ export default function Form() {
   const json = useMemo(() => {
     const output = {
       name: form.name,
-      imgSrc: form.imgSrc,
       rating: form.rating,
       D3D9: form.D3D9,
       ...(form.D3D9 === "dxvk" ? { dxvk_ver: form.dxvk_ver } : {}),
@@ -87,18 +85,6 @@ export default function Form() {
                   value={form.name}
                   onChange={(e) => update("name", e.target.value)}
                   placeholder="Ultimate spider-man"
-                />
-              </div>
-
-              <div className="form-group">
-                <label htmlFor="imgSrc">Immagine</label>
-                <input
-                  type="text"
-                  id="imgSrc"
-                  name="imgSrc"
-                  value={form.imgSrc}
-                  onChange={(e) => update("imgSrc", e.target.value)}
-                  placeholder="./img/ultimate-spider-man.jpg"
                 />
               </div>
 
