@@ -214,7 +214,10 @@ export default function Form() {
               </div>
 
               <div className="form-group">
-                <label htmlFor="desc">Descrizione</label>
+                <label htmlFor="desc">
+                  additional notes, game settings, links for patches/alternative
+                  launchers or workarounds required:
+                </label>
                 <textarea
                   id="desc"
                   name="desc"
