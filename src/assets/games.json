@@ -48,6 +48,57 @@
   ],
   "build_ver": "test-build-3",
   "desc": "game crashes with \"no access to memory location\""
+},
+{
+  "name": "Neighbours from hell",
+  "rating": 3,
+  "imgSrc": "./img/Neighbors_from_Hell_Coverart.png",
+  "D3D9": "dxvk",
+  "dxvk_ver": "3.1.1",
+  "Video": "Framebuffer",
+  "OC": false,
+  "OC_params": [
+    "STOCK",
+    "STOCK",
+    "STOCK"
+  ],
+  "build_ver": "Test-build-3",
+  "desc": "The game is shifted to the left due to it being in 4:3, without that, runs perfectly"
+},
+{
+  "name": "Neighbours from hell 2",
+  "rating": 3,
+  "imgSrc": "./img/neighbours from hell 2.jpg",
+  "D3D9": "dxvk",
+  "dxvk_ver": "3.1.1",
+  "Video": "Framebuffer",
+  "OC": false,
+  "OC_params": [
+    "STOCK",
+    "STOCK",
+    "STOCK"
+  ],
+  "build_ver": "Test-build-3",
+  "desc": "The game is shifted to the left due to it being in 4:3, without that, runs perfectly"
+},
+{
+  "name": "Tony Hawk's Underground 2",
+  "rating": 1,
+     "imgSrc": "./img/THUG.jpg",
+  "D3D9": "wined3d",
+  "Video": "Framebuffer",
+  "OC": false,
+  "OC_params": [
+    "STOCK",
+    "STOCK",
+    "STOCK"
+  ],
+  "build_ver": "test-build-3",
+  "desc": "Slow at complex levels. Cannot scroll through menus for whatever reason."
 }
+
+
+
+
 
 ]
