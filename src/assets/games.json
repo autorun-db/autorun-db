@@ -31,6 +31,23 @@
   "build_ver": "test-build-3",
   "desc": "The game requires the d3d9c bypass patch; it runs at 25-40 fps almost all the time, but there are some drops, nothing that makes it unplayable. ",
   "patch_link": "https://github.com/autorun-db/autorun-db.github.io/releases/download/Patches/Ultimate.Spider-Man.zip"
+},
+
+{
+  "name": "Undertale 2: Revenge of the robots",
+  "rating": 0,
+    "imgSrc": "./img/UT2.png",
+  "D3D9": "dxvk",
+  "dxvk_ver": "3.1.1",
+  "Video": "Compositor",
+  "OC": false,
+  "OC_params": [
+    "STOCK",
+    "STOCK",
+    "STOCK"
+  ],
+  "build_ver": "test-build-3",
+  "desc": "game crashes with \"no access to memory location\""
 }
 
 ]
