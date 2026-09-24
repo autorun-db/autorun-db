@@ -13,5 +13,24 @@
   ],
   "build_ver": "test-build-3",
   "desc": "runs at about 30fps on the highest settings even without OC"
+},
+
+{
+  "name": "Ultimate spiderman ",
+  "imgSrc": "./img/ultimate-spider-man.jpg",
+  "rating": 2,
+  "D3D9": "dxvk",
+  "dxvk_ver": "3.1.1",
+  "Video": "Framebuffer",
+  "OC": true,
+  "OC_params": [
+    "1766",
+    "STOCK",
+    "STOCK"
+  ],
+  "build_ver": "test-build-3",
+  "desc": "The game requires the d3d9c bypass patch; it runs at 25-40 fps almost all the time, but there are some drops, nothing that makes it unplayable. ",
+  "patch_link": "https://github.com/autorun-db/autorun-db.github.io/releases/download/Patches/Ultimate.Spider-Man.zip"
 }
+
 ]
