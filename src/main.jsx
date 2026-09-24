@@ -1,16 +1,7 @@
-import { StrictMode } from "react";
-import { createRoot } from "react-dom/client";
-import { HashRouter, Route, Routes } from "react-router";
-import App from "./App.jsx";
-import Form from "./Form.jsx";
+import { ViteReactSSG } from "vite-react-ssg";
+import { routes } from "./routes.jsx";
 
-createRoot(document.getElementById("root")).render(
-  <StrictMode>
-    <HashRouter>
-      <Routes>
-        <Route path="/" element={<App />} />
-        <Route path="/form" element={<Form />} />
-      </Routes>
-    </HashRouter>
-  </StrictMode>,
-);
+export const createRoot = ViteReactSSG({
+  routes,
+  basename: import.meta.env.BASE_URL,
+});
