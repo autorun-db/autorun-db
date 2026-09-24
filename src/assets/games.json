@@ -95,6 +95,22 @@
   ],
   "build_ver": "test-build-3",
   "desc": "Slow at complex levels. Cannot scroll through menus for whatever reason."
+},
+{
+  "name": "Devil May Cry 4",
+  "imgSrc": "./img/dmc.jpg",
+  "rating": 4,
+  "D3D9": "dxvk",
+  "dxvk_ver": "3.1.1",
+  "Video": "Compositor",
+  "OC": false,
+  "OC_params": [
+    "STOCK",
+    "STOCK",
+    "STOCK"
+  ],
+  "build_ver": "test-build-3",
+  "desc": "more than playable on very low settings"
 }
 
 

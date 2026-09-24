@@ -14,6 +14,7 @@ const RATINGS = [
 
 const D3D9_OPTIONS = ["wined3d", "in game folder", "dxvk"];
 const VIDEO_OPTIONS = ["Framebuffer", "Compositor"];
+const AUTORUN_BUILDS = ["test-build-3", "test-build-4"]; // da implementare perchè la gente non sa contribuire
 
 const OC_LABELS = ["CPU", "GPU", "RAM"];
 
@@ -22,11 +23,11 @@ function createEmptyForm() {
     name: "",
     rating: 0,
     D3D9: "dxvk",
-    dxvk_ver: "1.8",
+    dxvk_ver: "built in",
     Video: "Framebuffer",
     OC: false,
     OC_params: ["STOCK", "STOCK", "STOCK"],
-    build_ver: "1.0.0",
+    build_ver: "test-build-4",
     desc: "",
   };
 }
