@@ -46,7 +46,7 @@
     "Video": "Framebuffer",
     "OC": false,
     "OC_params": ["STOCK", "STOCK", "STOCK"],
-    "build_ver": "Test-build-3",
+    "build_ver": "test-build-3",
     "desc": "The game is shifted to the left due to it being in 4:3, without that, runs perfectly"
   },
   {
@@ -58,7 +58,7 @@
     "Video": "Framebuffer",
     "OC": false,
     "OC_params": ["STOCK", "STOCK", "STOCK"],
-    "build_ver": "Test-build-3",
+    "build_ver": "test-build-3",
     "desc": "The game is shifted to the left due to it being in 4:3, without that, runs perfectly"
   },
   {
