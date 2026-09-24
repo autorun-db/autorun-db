@@ -64,3 +64,11 @@
   color: white;
   border-radius: 0 0 10px 10px;
 }
+
+#patchset_button {
+  cursor: pointer;
+}
+
+#patchset_button:hover {
+  background-color: #2e2e2e;
+}

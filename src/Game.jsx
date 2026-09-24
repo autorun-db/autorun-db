@@ -32,6 +32,7 @@ export function Game({ gioco }) {
       <textarea readOnly value={gioco.desc}></textarea>
       {gioco.patch_link ? (
         <button
+          id="patchset_button"
           onClick={() => {
             window.open(gioco.patch_link, "_blank");
           }}
