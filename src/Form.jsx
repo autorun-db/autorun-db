@@ -12,9 +12,10 @@ const RATINGS = [
   { value: 4, label: "Diamond" },
 ];
 
-const D3D9_OPTIONS = ["wined3d", "in game folder", "dxvk"];
+const RENDERER_v3_OPTIONS = ["dxvk", "wined3d"];
+const RENDERER_v4_OPTIONS = ["wine", "dxvk+vkd3d"];
 const VIDEO_OPTIONS = ["Framebuffer", "Compositor"];
-const AUTORUN_BUILDS = ["test-build-3", "test-build-4"]; // da implementare perchè la gente non sa contribuire
+const AUTORUN_BUILDS = ["test-build-3", "test-build-4"];
 
 const OC_LABELS = ["CPU", "GPU", "RAM"];
 
@@ -23,7 +24,7 @@ function createEmptyForm() {
     name: "",
     rating: 0,
     D3D9: "dxvk",
-    dxvk_ver: "built in",
+    dxvk_ver: "",
     Video: "Framebuffer",
     OC: false,
     OC_params: ["STOCK", "STOCK", "STOCK"],
@@ -50,7 +51,9 @@ export default function Form() {
       name: form.name,
       rating: form.rating,
       D3D9: form.D3D9,
-      ...(form.D3D9 === "dxvk" ? { dxvk_ver: form.dxvk_ver } : {}),
+      ...(form.D3D9 === "dxvk+vkd3d" || form.D3D9 === "dxvk"
+        ? { dxvk_ver: form.dxvk_ver }
+        : {}),
       Video: form.Video,
       OC: form.OC,
       OC_params: form.OC_params,
@@ -111,7 +114,7 @@ export default function Form() {
               </div>
 
               <div className="form-group">
-                <label htmlFor="D3D9">D3D9</label>
+                <label htmlFor="D3D9">Renderer</label>
                 <div className="select-wrap">
                   <select
                     id="D3D9"
@@ -119,25 +122,39 @@ export default function Form() {
                     value={form.D3D9}
                     onChange={(e) => update("D3D9", e.target.value)}
                   >
-                    {D3D9_OPTIONS.map((opt) => (
-                      <option key={opt} value={opt}>
-                        {opt}
-                      </option>
-                    ))}
+                    {form.build_ver === "test-build-3"
+                      ? RENDERER_v3_OPTIONS.map((opt) => (
+                          <option key={opt} value={opt}>
+                            {opt}
+                          </option>
+                        ))
+                      : RENDERER_v4_OPTIONS.map((opt) => (
+                          <option key={opt} value={opt}>
+                            {opt}
+                          </option>
+                        ))}
                   </select>
                 </div>
               </div>
 
-              {form.D3D9 === "dxvk" && (
+              {(form.D3D9 === "dxvk+vkd3d" || form.D3D9 === "dxvk") && (
                 <div className="form-group">
-                  <label htmlFor="dxvk_ver">DXVK version</label>
+                  <label htmlFor="dxvk_ver">
+                    {form.D3D9 === "dxvk"
+                      ? "DXVK version"
+                      : "DXVK+VKD3D versions"}
+                  </label>
                   <input
                     type="text"
                     id="dxvk_ver"
                     name="dxvk_ver"
                     value={form.dxvk_ver}
                     onChange={(e) => update("dxvk_ver", e.target.value)}
-                    placeholder="1.8"
+                    placeholder={
+                      form.D3D9 === "dxvk"
+                        ? "insert dxvk version"
+                        : "insert dxvk+vkd3d version (format dxvk+vkd3d)"
+                    }
                   />
                 </div>
               )}
@@ -190,14 +207,20 @@ export default function Form() {
 
               <div className="form-group">
                 <label htmlFor="build_ver">Build / Autorun version</label>
-                <input
-                  type="text"
-                  id="build_ver"
-                  name="build_ver"
-                  value={form.build_ver}
-                  onChange={(e) => update("build_ver", e.target.value)}
-                  placeholder="1.0.0"
-                />
+                <div className="select-wrap">
+                  <select
+                    id="build_ver"
+                    name="build_ver"
+                    value={form.build_ver}
+                    onChange={(e) => update("build_ver", e.target.value)}
+                  >
+                    {AUTORUN_BUILDS.map((opt) => (
+                      <option key={opt} value={opt}>
+                        {opt}
+                      </option>
+                    ))}
+                  </select>
+                </div>
               </div>
 
               <div className="form-group">
