@@ -15,7 +15,7 @@
     "name": "Ultimate spiderman ",
     "imgSrc": "./img/ultimate-spider-man.jpg",
     "rating": 3,
-    "D3D9": "dxvk+",
+    "D3D9": "dxvk",
     "dxvk_ver": "3.1.1",
     "Video": "Framebuffer",
     "OC": true,
