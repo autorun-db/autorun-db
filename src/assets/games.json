@@ -14,14 +14,14 @@
   {
     "name": "Ultimate spiderman ",
     "imgSrc": "./img/ultimate-spider-man.jpg",
-    "rating": 2,
+    "rating": 3,
     "D3D9": "dxvk+",
     "dxvk_ver": "3.1.1",
     "Video": "Framebuffer",
     "OC": true,
-    "OC_params": ["1766", "STOCK", "STOCK"],
-    "build_ver": "test-build-3",
-    "desc": "The game requires the d3d9c bypass patch; it runs at 25-40 fps almost all the time, but there are some drops, nothing that makes it unplayable. ",
+    "OC_params": ["1428", "STOCK", "STOCK"],
+    "build_ver": "test-build-4",
+    "desc": "The game requires the d3d9c bypass patch, minor OC required",
     "patch_link": "https://github.com/autorun-db/autorun-db.github.io/releases/download/Patches/Ultimate.Spider-Man.zip"
   },
 
@@ -81,7 +81,7 @@
     "Video": "Compositor",
     "OC": false,
     "OC_params": ["STOCK", "STOCK", "STOCK"],
-    "build_ver": "test-build-3",
-    "desc": "more than playable on very low settings, UNPLAYABLE ON BUILD 4 FOR NOW, use 60fps cap in game settings"
+    "build_ver": "test-build-4",
+    "desc": "more than playable on very low settings"
   }
 ]
