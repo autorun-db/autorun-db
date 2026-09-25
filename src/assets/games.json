@@ -83,5 +83,20 @@
     "OC_params": ["STOCK", "STOCK", "STOCK"],
     "build_ver": "test-build-4",
     "desc": "more than playable on very low settings"
-  }
+  },
+  {
+  "name": "Spider-Man (2000)",
+  "imgSrc": "./img/spider.webp",
+  "rating": 0,
+  "D3D9": "wine",
+  "Video": "Compositor",
+  "OC": false,
+  "OC_params": [
+    "STOCK",
+    "STOCK",
+    "STOCK"
+  ],
+  "build_ver": "test-build-4",
+  "desc": "unplayable framerates whenever Spider-Man is on screen (including the menu)"
+}
 ]
