@@ -98,5 +98,20 @@
   ],
   "build_ver": "test-build-4",
   "desc": "unplayable framerates whenever Spider-Man is on screen (including the menu)"
+},
+{
+  "name": "7 sins",
+    "imgSrc": "./img/7sins.webp",
+  "rating": 0,
+  "D3D9": "wine",
+  "Video": "Framebuffer",
+  "OC": false,
+  "OC_params": [
+    "STOCK",
+    "STOCK",
+    "STOCK"
+  ],
+  "build_ver": "test-build-4",
+  "desc": "instantly crashes"
 }
 ]
